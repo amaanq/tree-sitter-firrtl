@@ -393,7 +393,7 @@ module.exports = grammar({
         /[0-7]{1,3}/,
         /x[0-9a-fA-F]{2}/,
         /u[0-9a-fA-F]{4}/,
-        /u{[0-9a-fA-F]+}/
+        /u\{[0-9a-fA-F]+\}/
       ))),
 
     identifier: _ => /[a-zA-Z_][a-zA-Z0-9_$]*/, // LegalStartChar (LegalIdChar)*
